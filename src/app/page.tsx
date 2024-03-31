@@ -9,8 +9,8 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: string[]): string {
+  return classes.filter(Boolean).join(' ');
 }
 
 const products = [
