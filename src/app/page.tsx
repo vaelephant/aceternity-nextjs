@@ -4,7 +4,7 @@ import React from "react";
 import { GoogleGeminiEffect } from "@/components/ui/google-gemini-effect";
 import { HeroParallax } from "@/components/ui/hero-parallax";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import  AboutUs  from "@/components/ui/aboutus";
+import AboutUs from "@/components/ui/aboutus";
 import Footer from '@/components/ui/Footer'; // 确保路径正确
 
 import { useState } from 'react'
@@ -170,7 +170,16 @@ export default function GoogleGeminiEffectDemo() {
       </div>
 
 
-      <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      {/* 关于我们-----开始 */}
+      <div>
+        <AboutUs />
+      </div>
+
+
+      {/*提交联系方式-----开始 */}
+
+      {/* <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8"> */}
+      <div className="isolate bg-white px-6 py-12 lg:px-8 mb-4">
         <div
           className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
           aria-hidden="true"
@@ -184,9 +193,11 @@ export default function GoogleGeminiEffectDemo() {
           />
         </div>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact US</h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
-            Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          Contact us for more company introductions and product information.
+          <br />
+          当社の紹介と製品情報をさらにご希望の方は、お問い合わせください。
           </p>
         </div>
         <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -262,7 +273,9 @@ export default function GoogleGeminiEffectDemo() {
                     className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                   >
                     <option>US</option>
+                    <option>JP</option>
                     <option>CA</option>
+                    <option>CH</option>
                     <option>EU</option>
                   </select>
                   <ChevronDownIcon
@@ -333,16 +346,13 @@ export default function GoogleGeminiEffectDemo() {
           </div>
         </form>
       </div>
+      {/*提交联系方式-----结束 */}
 
-      {/* 关于我们-----开始 */}
-      <div><h1>lasfasfasdfasfasj</h1>
-      <AboutUs  />
-      </div>
-      {/* 关于我们-----结束 */}
+
       <div>
-      {/* 页面内容 */}
-      <Footer />
-    </div>
+        {/* 页面内容 */}
+        <Footer />
+      </div>
 
 
     </>
